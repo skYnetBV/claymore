@@ -1,0 +1,425 @@
+* {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Blessed Day';
+	src: url(fonts/blessedDay.ttf);
+}
+
+body {
+	}
+
+.clear {
+	clear: both;
+}
+
+#content {
+	margin-top: 150px;
+}
+
+#about {
+	margin-top: 150px;
+}
+
+#about p {
+	font-size: 15pt;
+	font-family: 'OpenSans';
+}
+
+#rightCol {
+	color: white;
+	font-size: 18pt;
+}
+
+#rightCol > p {
+	margin-top: 50px;
+}
+
+.buttons {
+	padding: .8em 1em calc(.8em + 3px);
+	color: white;
+	font-weight: 700;
+	border-radius: 3px;
+}
+
+#colorButtons {
+	position: relative;
+	height: 65px;
+	margin-top: 50px;
+	border-radius: 5px;
+}
+
+#leftButton {
+	background: rgb(2, 188, 156);
+	float: left;
+	width: 48%;
+	text-align: center;
+	transition: 1s;
+}
+
+#leftButton:hover {
+	color: rgb(180, 180, 180);
+	background: #7FFFE6;
+}
+
+#leftButton:visited {
+	color: #fff;
+}
+
+#or {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -15px;
+	margin-left: -20px;
+	width: 40px;
+	height: 40px;
+	background: white;
+	color: rgb(52, 73, 94);
+	border-radius: 20px;
+	text-align: center;
+}
+
+#rightButton {
+	background: rgb(52, 152, 219);
+	float: right;
+	width: 48%;
+	text-align: center;
+	transition: 1s;
+}
+
+#rightButton:hover {
+	color: rgb(180, 180, 180);
+	background: #81CCFF;
+}
+
+#rightButton:visited {
+	color: #fff;
+}
+
+#wrap {
+	width: 100%;
+	margin: 0px auto;
+}
+
+#container {
+	width: 1080px;
+	margin: auto;
+}
+
+.logo {
+	margin-top: 20px;
+}
+
+#menu {
+	margin-top: 70px;
+}
+
+.menu {
+	font-family: 'OpenSans';
+	font-style: 18pt;
+	display: inline;
+	padding: 10px; 
+}
+
+.menu > a {
+	text-decoration: none;
+	color: white;
+}
+
+.menu:hover {
+	border-bottom: solid 2px;
+	border-color: rgb(26, 188, 56);
+}
+
+#logo {
+	font-size: 72pt;
+	font-family: 'Blessed Day';
+	font-weight: 100;
+	color: rgb(255, 255, 255);
+	margin-left: 20%;
+}
+
+#services {
+	position: relative;
+	margin: 150px auto 0;
+	background-color: rgb(246, 246, 246);
+	min-height: 200px;
+	padding: 75px 0 75px;
+}
+
+#services p {
+	font-size: 12pt;
+}
+
+.wrap {
+	width: 1080px;
+	margin: auto;
+	position: relative;
+}
+
+.services {
+	text-align: center;
+}
+
+#sliderWrap {
+	position: relative;
+	background: url(img/sliderBg.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center top; 
+	height: 575px;
+	margin: auto;
+}
+
+#sliderHead {
+	text-align: center;
+	font-family: 'OpenSans';
+	color: rgb(246, 246, 246);
+}
+
+#sliderHead p {
+	font-size: 13pt;
+}
+
+.cont {
+	position: relative;
+	width: 810px;
+	height: 378px;
+	margin: 60px auto;
+}
+
+.cont input {
+	display: none;
+}
+
+.slider, .img {
+	width: inherit;
+	height: inherit;
+}
+
+.slider {
+	position: relative;
+	overflow: hidden;
+}
+
+.img {
+	position: absolute;
+	opacity: 0;
+	z-index: 0;
+	transition: opacity .6s, z-index .6s; 
+}
+
+.img1 {
+	background: url(img/Mac.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+.img2 {
+	background: url(img/iphone.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+.img3 {
+	background: url(img/tablet1.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+#slide1:checked ~ .slider .img1,
+#slide2:checked ~ .slider .img2,
+#slide3:checked ~ .slider .img3 {
+	opacity: 1;
+	z-index: 1;
+}
+
+.controls {
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	margin-left: -63px;
+}
+
+.controls label {
+	display: block;
+	width: 30px;
+	height: 10px;
+	background-color: rgb(44, 62, 80);
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+	opacity: .2;
+	transition: opacity .5s;
+}
+
+.controls label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3) {
+	opacity: .8;
+}
+
+#wps {
+	color: rgb(52, 73, 94);
+}
+
+#wps article {
+	margin-bottom: 100px;
+}
+
+#wps > h1 {
+	text-align: center;
+}
+
+#wps img {
+	float: left;
+}
+
+.blocks {
+	margin: 25px;
+	border-radius: 10px;
+	transition: 1s;
+}
+
+#wps .text {
+	margin-top: 30px;
+	padding-left: 180px;
+}
+ .blocks:hover {
+ 	background: rgb(226, 226, 226);
+ }
+
+ #contacts {
+ 	background: rgb(52, 73, 94);
+ }
+
+ #contacts article {
+ 	padding-top: 100px;
+ 	padding-bottom: 100px;
+ }
+
+ .contInfo {
+ 	color: rgb(246, 246, 246);
+ }
+
+ #map {
+ 	width: 14px;
+ 	height: 20px;
+ 	display: block;
+ 	float: left;
+ 	background: url(img/sprite.png);
+ 	margin-right: 10px;
+ }
+
+ #call {
+ 	width: 14px;
+ 	height: 20px;
+ 	display: block;
+ 	float: left;
+ 	background: url(img/sprite.png);
+ 	background-position: -14px 0;
+ 	margin-right: 10px;
+ }
+
+ #mail {
+ 	width: 20px;
+ 	height: 14px;
+ 	display: block;
+ 	float: left;
+ 	background: url(img/sprite.png);
+ 	background-position: -28px 0;
+ 	margin-left: -6px;
+ 	margin-right: 10px;
+ }
+form input, form textarea {
+	margin: 15px;
+	height: 40px;
+	background: rgb(93, 109, 126);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#nameField {
+	width: 43%;
+}
+
+#emailField {
+	width: 43%;
+}
+
+#subjectField {
+	width: 93%;
+}
+
+#messageField {
+	width: 93%;
+	height: 150px;
+}
+
+form button {
+	float: right;
+	height: 65px;
+	width: 35%;
+	margin: 1%;
+	transition: 1s;
+}
+
+#sumbit {
+	background: rgb(52, 152, 219);
+	margin-right: 4%;
+}
+
+#sumbit:hover {
+	color: rgb(180, 180, 180);
+	background: #81CCFF;
+}
+
+#reset {
+	background: rgb(2, 188, 156);
+}
+
+#reset:hover {
+	color: rgb(180, 180, 180);
+	background: #7FFFE6;
+}
+
+#delta {
+	display: block;
+	position: absolute;
+	border-bottom: 25px solid #2C3E50;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	bottom: 0;
+	left: 50%;
+	margin-left: -15px;
+}
+
+footer {
+	background: #2C3E50;
+	height: 150px;
+}
+
+footer p {
+	text-align: center;
+	color: rgb(246, 246, 246);
+	font-size: 10pt;
+	line-height: 150px;
+	margin-bottom: 0;
+}
+
+.space {
+	margin-left: 20px;
+}
+
+.topBg {
+	background-image: url(img/background.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% 100%; 
+}
