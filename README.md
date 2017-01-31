@@ -1,5 +1,5 @@
 # claymore
 
-### After cloning a repository should be set dependencies on using NPM:
+### After cloning a repository should be install dependencies with NPM:
 
 > *npm install*
