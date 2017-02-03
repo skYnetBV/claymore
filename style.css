@@ -58,7 +58,7 @@ body {
 	float: left;
 	width: 48%;
 	text-align: center;
-	transition: 1s;
+	transition: .5s;
 }
 
 #leftButton:hover {
@@ -89,7 +89,7 @@ body {
 	float: right;
 	width: 48%;
 	text-align: center;
-	transition: 1s;
+	transition: .5s;
 }
 
 #rightButton:hover {
@@ -357,15 +357,15 @@ form button {
 	height: 65px;
 	width: 35%;
 	margin: 1%;
-	transition: 1s;
+	transition: .5s;
 }
 
-#sumbit {
+#submit {
 	background: rgb(52, 152, 219);
 	margin-right: 4%;
 }
 
-#sumbit:hover {
+#submit:hover {
 	color: rgb(180, 180, 180);
 	background: #81CCFF;
 }
