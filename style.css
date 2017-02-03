@@ -27,7 +27,7 @@ body {
 
 #about p {
 	font-size: 15pt;
-	font-family: 'OpenSans';
+	font-family: 'OpenSans', serif;
 }
 
 #rightCol {
@@ -103,7 +103,7 @@ body {
 
 #wrap {
 	width: 100%;
-	margin: 0px auto;
+	margin: 0 auto;
 }
 
 #container {
@@ -120,8 +120,8 @@ body {
 }
 
 .menu {
-	font-family: 'OpenSans';
-	font-style: 18pt;
+	font-family: 'OpenSans', serif;
+	font-style: oblique;
 	display: inline;
 	padding: 10px; 
 }
@@ -138,7 +138,7 @@ body {
 
 #logo {
 	font-size: 72pt;
-	font-family: 'Blessed Day';
+	font-family: 'Blessed Day', serif;
 	font-weight: 100;
 	color: rgb(255, 255, 255);
 	margin-left: 20%;
@@ -168,17 +168,15 @@ body {
 
 #sliderWrap {
 	position: relative;
-	background: url(img/sliderBg.png);
-	background-repeat: no-repeat;
+	background: url(img/sliderBg.png) center top no-repeat;
 	background-size: 100% auto;
-	background-position: center top; 
 	height: 575px;
 	margin: auto;
 }
 
 #sliderHead {
 	text-align: center;
-	font-family: 'OpenSans';
+	font-family: 'OpenSans', serif;
 	color: rgb(246, 246, 246);
 }
 
@@ -215,21 +213,15 @@ body {
 }
 
 .img1 {
-	background: url(img/Mac.png);
-	background-repeat: no-repeat;
-	background-position: bottom center;
+	background: url(img/Mac.png) bottom center no-repeat;
 }
 
 .img2 {
-	background: url(img/iphone.png);
-	background-repeat: no-repeat;
-	background-position: bottom center;
+	background: url(img/iphone.png) bottom center no-repeat;
 }
 
 .img3 {
-	background: url(img/tablet1.png);
-	background-repeat: no-repeat;
-	background-position: bottom center;
+	background: url(img/tablet1.png) bottom center no-repeat;
 }
 
 #slide1:checked ~ .slider .img1,
@@ -322,8 +314,7 @@ body {
  	height: 20px;
  	display: block;
  	float: left;
- 	background: url(img/sprite.png);
- 	background-position: -14px 0;
+ 	background: url(img/sprite.png) -14px 0;
  	margin-right: 10px;
  }
 
@@ -332,8 +323,7 @@ body {
  	height: 14px;
  	display: block;
  	float: left;
- 	background: url(img/sprite.png);
- 	background-position: -28px 0;
+ 	background: url(img/sprite.png) -28px 0;
  	margin-left: -6px;
  	margin-right: 10px;
  }
@@ -418,8 +408,6 @@ footer p {
 }
 
 .topBg {
-	background-image: url(img/background.png);
-	background-repeat: no-repeat;
-	background-position: center top;
+	background: url(img/background.png) center top no-repeat;
 	background-size: 100% 100%; 
 }
