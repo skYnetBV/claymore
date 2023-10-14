@@ -1,3 +1,9 @@
+@font-face {
+	font-family: 'Blessed Day';
+	src: url(fonts/blessedDay.ttf);
+}
+
+
 * {
 	border: 0;
 	padding: 0;
@@ -5,16 +11,15 @@
 	box-sizing: border-box;
 }
 
-@font-face {
-	font-family: 'Blessed Day';
-	src: url(fonts/blessedDay.ttf);
-}
-
 body {
-	}
+}
 
 .clear {
 	clear: both;
+}
+
+.header {
+	padding-top: 20px;
 }
 
 #content {
@@ -111,9 +116,7 @@ body {
 	margin: auto;
 }
 
-.logo {
-	margin-top: 20px;
-}
+.logo {}
 
 #menu {
 	margin-top: 70px;
